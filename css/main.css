@@ -6,6 +6,9 @@
 	background-color: #aa0000;
 	border-color: #aa0000;
 }
+.goog-te-menu-value#google_translate_element {
+    color: #000!important;
+}
 
 .navbar-inverse a{
 	color: #ffffff !important;
@@ -18,7 +21,4 @@
     border-top: 15px solid #aa0000!important;
     border-bottom: 1px solid #aa0000!important;
     border-right: 1px solid #aa0000!important;
-}
-.goog-te-menu-value {
-    color: #000!important;
 }
