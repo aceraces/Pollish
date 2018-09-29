@@ -1,6 +1,6 @@
 .bg-4 {
     background-color: #aa0000;
-    color: #ffffff;
+    color: #9d9d9d;
 }
 .navbar-inverse {
 	background-color: #aa0000;
@@ -8,10 +8,6 @@
 }
 .goog-te-menu-value#google_translate_element {
     color: #000!important;
-}
-
-.navbar-inverse a{
-	color: #ffffff !important;
 }
 .dropdown-menu li a{
 	color: #aa0000 !important;
