@@ -69,7 +69,6 @@ function googleTranslateElementInit() {
 		?>
 					</td>
 				</tr>
-			<tr><td>input type="submit" name="vote" value="vote"</td></tr>	
 			</table>
 
 	
