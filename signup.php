@@ -22,18 +22,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Pollish</a>
+                    <a class="navbar-brand" href="index.php">Pollish</a>
                 </div>
 			
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="stats.html">Stats <span class="sr-only">(current)</span></a></li>                  
+                        <li><a href="stats.php">Stats <span class="sr-only">(current)</span></a></li>                  
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
 					<div id="google_translate_element" style="width:158!important"></div><script type="text/javascript">
 function googleTranslateElementInit() {
