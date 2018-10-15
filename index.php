@@ -44,7 +44,6 @@
         function statusChangeCallback(response) {
             if (response.status === 'connected'){
                 setElements(true);
-                fetchAPI();
                 console.log("Logged in");
             }
             else {
@@ -81,6 +80,8 @@
                 setElements(false);
             });
         }
+
+
 
     </script>
 
@@ -131,6 +132,7 @@
     </header>
 
     <script>
+
         <?php
         $pollid = $_GET['pollid'];
         $dbServername = 'cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
