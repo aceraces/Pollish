@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <style media="screen">
         #fb_login{margin-top: 12px}
-        #logout, #settings(display: none)
+        #logout, #settings(display: none);
     </style>
 
 </head>
@@ -99,7 +99,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="pull-left" href="index.php"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50"></a>
+                    <a class="pull-left" href="index.php"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50" alt="Smiley face"></a>
                 </div>
 			
 
@@ -109,11 +109,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a id= "logout" href="index.php" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-                        <li><fb:login-button
-                                    id = "fb_login"
-                                    scope="public_profile,email"
-                                    onlogin="checkLoginState();">
-                            </fb:login-button></li>
+                        <li><fb:login-button id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></li>
                         <li><a href="stats.php">Stats <span class="sr-only">(current)</span></a></li>
                         <li><a id="settings" href="settings.php">Settings <span class="sr-only">(current)</span></a></li>
 
@@ -131,52 +127,13 @@
 		</nav>
     </header>
 
-    <script>
-
-        <?php
-        $pollid = $_GET['pollid'];
-        $dbServername = 'cvktne7b4wbj4ks1.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
-        $dbUsername = 'tgevu4heav8r9ya3';
-        $dbPassword = 'bxvdvshu91dospfk';
-        $dbName = 'x7tww49f1zeflsnc';
-
-        $connect = mysqli_connect($dbServername,$dbUsername,$dbPassword, $dbName);
-        $query = "SELECT * FROM polls WHERE pollid='$pollid'";
-        $q = mysqli_query($connect, $query);
-        while($row=mysqli_fetch_array($q)){
-            $id=$row[0];
-            $title=$row[1];
-            $pollid=$row[2];
-            $ipaddress=$row[3];
-            ?>
-            <table>
-            <tr>
-            <td>
-            <?php
-            $questions = "SELECT * FROM questions WHERE pollid='$pollid'";
-            $q2 = mysqli_query($connect, $questions);
-            while($r=mysqli_fetch_array($q)){
-                $question=$r[0];
-                echo '<tr><td>'.$question.'</td><td>RadioButton</td></tr>';
-            }
-            }
-            ?>
-            </td>
-            </tr>
-            </table>
-    </script>
-
-
-
-
-
 
     <!-- Logged in Home view -->
     <div class="jumbotron" id = "jumbotron_logged_in">
         <div class="container-fluid text-center">
-            <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png">
+            <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" alt="Smiley face">
             <p>JOIN AN EXISTING POLL</p>
-            <input type="text" class="form-control" placeholder="Room ID goes here..." aria-label="Room ID goes here..." aria-describedby="basic-addon2">
+            <input type="text" class="form-control" placeholder="Room ID goes here..." aria-label="Room ID goes here...">
             <br>
             <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">JOIN</a>
         </div>
@@ -192,9 +149,9 @@
     <div class="jumbotron" id = "jumbotron_logged_out">
 
         <div class="container-fluid text-center">
-            <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png">
+            <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" alt="Smiley face">
             <p>JOIN AN EXISTING POLL</p>
-            <input type="text" class="form-control" placeholder="Room ID goes here..." aria-label="Room ID goes here..." aria-describedby="basic-addon2">
+            <input type="text" class="form-control" placeholder="Room ID goes here..." aria-label="Room ID goes here...">
             <br>
             <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">JOIN</a>
         </div>

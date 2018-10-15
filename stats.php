@@ -94,7 +94,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="pull-left" href="index.php"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50"></a>
+                <a class="pull-left" href="index.php"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50" alt="Smiley face"></a>
             </div>
 
 
@@ -104,11 +104,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a id= "logout" href="index.php" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-                    <li><fb:login-button
-                                id = "fb_login"
-                                scope="public_profile,email"
-                                onlogin="checkLoginState();">
-                        </fb:login-button></li>
+                    <li><fb:login-button id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></li>
                     <li><a href="stats.php">Stats <span class="sr-only">(current)</span></a></li>
                     <li><a id="settings" href="settings.php">Settings <span class="sr-only">(current)</span></a></li>
 
@@ -131,7 +127,7 @@
 <!-- Stats page view -->
 <div class="jumbotron">
     <div class="container text-center">
-        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="100" width="100">
+        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="100" width="100" alt="Smiley face">
         <h2>GENDER GRAPH</h2>
         <canvas id="gender"></canvas>
         <br>

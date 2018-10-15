@@ -98,7 +98,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="pull-left" href="index.php"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50"></a>
+                <a class="pull-left" href="index.php"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50" alt="Smiley face"></a>
             </div>
 
 
@@ -108,11 +108,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a id= "logout" href="index.php" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-                    <li><fb:login-button
-                            id = "fb_login"
-                            scope="public_profile,email"
-                            onlogin="checkLoginState();">
-                        </fb:login-button></li>
+                    <li><fb:login-button id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></li>
                     <li><a href="stats.php">Stats <span class="sr-only">(current)</span></a></li>
                     <li><a id="settings" href="settings.php">Settings <span class="sr-only">(current)</span></a></li>
 
@@ -134,7 +130,7 @@
 <!-- Logged in Existing Polls view -->
 <div class="jumbotron" id = "jumbotron_logged_in">
     <div class="container text-center">
-        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png">
+        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" alt="Smiley face">
         <h1>EXISTING POLLS(in)</h1>
 
     </div>
@@ -147,7 +143,7 @@
 <div class="jumbotron" id = "jumbotron_logged_out">
 
     <div class="container text-center">
-        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png">
+        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" alt="Smiley face">
     </div>
 </div>
 
