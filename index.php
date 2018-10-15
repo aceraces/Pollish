@@ -82,22 +82,6 @@
             });
         }
 
-        function fetchAPI(){
-            FB.api("/me?fields=id,name", function(response) {
-                if (response && !response.error) {
-                    userDetails(response)
-                }
-            });
-        }
-
-        function userDetails(user){
-            let name = "<h1>$(user.name)</h1>";
-            let id = $(user.id);
-
-            document.getElementById("name_present").innerHTML = name;
-        }
-
-
     </script>
 
 
