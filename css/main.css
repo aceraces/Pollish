@@ -1,20 +1,20 @@
 .bg-4 {
-    background-color: #aa0000;
-    color: #9d9d9d;
+    background-color: #CC4B4C;
+    color: #FFFFFF;
 }
 .navbar-inverse {
-	background-color: #aa0000;
-	border-color: #aa0000;
+	background-color: #CC4B4C;
+	border-color: #CC4B4C;
 }
 .goog-te-menu-value#google_translate_element {
-    color: #000!important;
+    color: #CC4B4C!important;
 }
 .dropdown-menu li a{
-	color: #aa0000 !important;
+	color: #CC4B4C !important;
 }
 .goog-te-gadget-simple{
-	border-left: 1px solid #aa0000!important;
-    border-top: 15px solid #aa0000!important;
-    border-bottom: 1px solid #aa0000!important;
-    border-right: 1px solid #aa0000!important;
+	border-left: 1px solid #F8F8F8!important;
+    border-top: 15px solid #F8F8F8!important;
+    border-bottom: 1px solid #F8F8F8!important;
+    border-right: 1px solid #F8F8F8!important;
 }

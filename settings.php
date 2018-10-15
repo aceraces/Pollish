@@ -8,8 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-
     <style media="screen">
         #fb_login{margin-top: 12px}
         #logout, #settings(display: none)
@@ -17,7 +15,7 @@
 
 </head>
 <body>
-<!-- Facebook API script and functions -->
+<!-- Facebook API script and functions-->
 <script>
     window.fbAsyncInit = function() {
         FB.init({
@@ -63,11 +61,15 @@
         if (loginInfo){
             document.getElementById("settings").style.display = "block";
             document.getElementById("logout").style.display = "block";
+            document.getElementById("jumbotron_logged_out").style.display = "none";
+            document.getElementById("jumbotron_logged_in").style.display = "block";
             document.getElementById("fb_login").style.display = "none";
         }
         else {
             document.getElementById("settings").style.display = "none";
             document.getElementById("logout").style.display = "none";
+            document.getElementById("jumbotron_logged_in").style.display = "none";
+            document.getElementById("jumbotron_logged_out").style.display = "block";
             document.getElementById("fb_login").style.display = "block";
         }
     }
@@ -77,6 +79,7 @@
             setElements(false);
         });
     }
+
 
 </script>
 
@@ -126,74 +129,33 @@
     </nav>
 </header>
 
+<!-- Logged out Settings view -->
+<div class="jumbotron" id = "jumbotron_logged_in">
+    <div class="container text-center">
+        <h2>SETTINGS</h2>
+        <a href="profile.php" type="button" class="btn btn-primary btn-lg btn-block">PROFILE</a>
+        <a href="existing_polls.php" type="button" class="btn btn-primary btn-lg btn-block">EXISTING POLLS</a>
+        <a href="create_poll.php" type="button" class="btn btn-primary btn-lg btn-block">CREATE POLL</a>
+
+    </div>
+
+
+
 
 </div>
-<!-- Stats page view -->
-<div class="jumbotron">
+<!-- Logged out Settings view -->
+<div class="jumbotron" id = "jumbotron_logged_out">
+
     <div class="container text-center">
-        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="100" width="100">
-        <h2>GENDER GRAPH</h2>
-        <canvas id="gender"></canvas>
-        <br>
-        <h2>OPERATING SYSTEM GRAPH</h2>
-        <canvas id="os_system"></canvas>
+        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png">
+
 
     </div>
 </div>
-<!-- CHART.JS gender chart-->
-<script>
-    const genderChart = document.getElementById("gender");
-    let doughnutGenderChart = new Chart(genderChart, {
-        type: 'doughnut',
-        data:{
-            labels:["Male", "Female"],
-            datasets:[{
-                label:"Percentage",
-                data:[55, 45],
-                backgroundColor: ["#36A2EB", "#FF6384"]
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
-
-</script>
 
 
-<!-- CHART.JS OS system chart-->
-<script>
-    let osChart = document.getElementById("os_system");
-    let doughnutOsChart = new Chart(osChart, {
-        type: "doughnut",
-        data:{
-            labels:["Windows", "Macintosh", "Linux", "Android", "iOS", "Other"],
-            datasets:[{
-                label:"Percentage",
-                data:[43, 12, 5, 19, 15, 6],
-                backgroundColor: ["#36A2EB", "#F2F5E7", "orange", "#FFCD56", "#FF6384", "green"]
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
-</script>
 
-
-<footer class="container-fluid bg-4 text-center">
+<footer class="container-fluid bg-4 text-center ">
     <p>Pollish inc. 2018</p>
 </footer>
 <div class="container-fluid">
