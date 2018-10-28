@@ -83,7 +83,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="pull-left" href="index.php"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50" alt="Smiley face"></a>
+                <a class="pull-left" href="/"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50" alt="Smiley face"></a>
             </div>
 
 
@@ -92,10 +92,10 @@
                 <ul class="nav navbar-nav">
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a id= "logout" href="index.php" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    <li><a id= "logout" href="/" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
                     <li><fb:login-button id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></li>
-                    <li><a href="stats.php">Stats <span class="sr-only">(current)</span></a></li>
-                    <li><a id="settings" href="settings.php">Settings <span class="sr-only">(current)</span></a></li>
+                    <li><a href="/stats">Stats <span class="sr-only">(current)</span></a></li>
+                    <li><a id="settings" href="/settings">Settings <span class="sr-only">(current)</span></a></li>
 
                 </ul>
                 <div id="google_translate_element" style="width:158!important">

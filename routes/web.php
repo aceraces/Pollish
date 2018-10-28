@@ -12,8 +12,8 @@
 */
 
 Route::get('/', 'PagesController@index');
-Route::get('/settings.php', 'PagesController@settings');
-Route::get('/stats.php', 'PagesController@stats');
-Route::get('/profile.php', 'PagesController@profile');
-Route::get('/create_poll.php', 'PagesController@create_poll');
-Route::get('/existing_polls.php', 'PagesController@existing_polls');
+Route::get('/settings', 'PagesController@settings');
+Route::get('/stats', 'PagesController@stats');
+Route::get('/profile', 'PagesController@profile');
+Route::get('/create_poll', 'PagesController@create_poll');
+Route::get('/existing_polls', 'PagesController@existing_polls');
