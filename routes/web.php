@@ -17,3 +17,4 @@ Route::get('/stats', 'PagesController@stats');
 Route::get('/profile', 'PagesController@profile');
 Route::get('/create_poll', 'PagesController@create_poll');
 Route::get('/existing_polls', 'PagesController@existing_polls');
+Route::get('/about', 'PagesController@about');
