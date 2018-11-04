@@ -94,7 +94,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a id= "logout" href="/" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-                        <li><embed data-fb="login-button" id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();" /></li>
+                        <li><fb:login-button id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></li>
                         <li><a href="/stats">Stats <span class="sr-only">(current)</span></a></li>
                         <li><a id="settings" href="/settings">Settings <span class="sr-only">(current)</span></a></li>
 
