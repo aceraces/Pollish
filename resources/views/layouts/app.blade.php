@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="fb: http://www.facebook.com/2008/fbml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
     <title>{{config('app.name', 'Pollish')}}</title>
     <meta charset="utf-8">
