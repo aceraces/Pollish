@@ -93,7 +93,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a id= "logout" href="/" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-                    <li><div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"><fb:login-button id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></div></li>
+                    <li><embed data-fb="login-button" data-id = "fb_login" data-scope="public_profile,email" data-onlogin="checkLoginState();" /></li>
                     <li><a href="/stats">Stats <span class="sr-only">(current)</span></a></li>
                     <li><a id="settings" href="/settings">Settings <span class="sr-only">(current)</span></a></li>
 
@@ -101,12 +101,12 @@
                 <div id="google_translate_element" style="width:158px!important">
 
                 </div>
-                <script type="text/javascript">
+                <script>
                     function googleTranslateElementInit() {
                         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
                     }
                 </script>
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
