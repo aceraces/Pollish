@@ -30,6 +30,10 @@ class PagesController extends Controller
         return view('pages.existing_polls');
     }
 
+    public function about(){
+        return view('pages.about');
+    }
+
 
 
 }
