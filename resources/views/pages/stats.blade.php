@@ -93,7 +93,7 @@
                     <li><a id="settings" href="/settings">Settings <span class="sr-only">(current)</span></a></li>
 
                 </ul>
-                <div id="google_translate_element" style="width:158!important">
+                <div id="google_translate_element" style="width:158px!important">
 
                 </div><script type="text/javascript">
                     function googleTranslateElementInit() {
