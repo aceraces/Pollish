@@ -11,6 +11,12 @@
     <style media="screen">
         #fb_login{margin-top: 12px}
     </style>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 
 </head>
     <body>
