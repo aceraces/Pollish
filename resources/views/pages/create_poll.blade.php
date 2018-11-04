@@ -93,7 +93,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a id= "logout" href="/" onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-                    <li><fb:login-button id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button></li>
+                    <li><script>document.write('<fb:login-button id = "fb_login" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>')</script></li>
                     <li><a href="/stats">Stats <span class="sr-only">(current)</span></a></li>
                     <li><a href="about">About Us <span class="sr-only">(current)</span></a></li>
                     <li><a id="settings" href="/settings">Settings <span class="sr-only">(current)</span></a></li>
