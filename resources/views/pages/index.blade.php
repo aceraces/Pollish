@@ -118,7 +118,7 @@
     <div class="jumbotron" id = "jumbotron_logged_in">
         <div class="container-fluid text-center">
             <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" alt="Smiley face" class="responsive">
-            <p style="font-size=5vw">JOIN AN EXISTING POLL</p>
+            <p>JOIN AN EXISTING POLL</p>
             <input type="text" class="form-control" placeholder="Room ID goes here..." aria-label="Room ID goes here...">
             <br>
             <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">JOIN</a>
