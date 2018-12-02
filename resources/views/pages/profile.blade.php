@@ -116,7 +116,7 @@
 <!-- Logged in home view -->
 <div class="jumbotron" id = "jumbotron_logged_in">
     <div class="container text-center">
-        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="100" width="100" alt="Smiley face">
+        <img src="https://i.ibb.co/jr44XK0/pollish-100-100-trans.png" height="100" width="100" alt="Smiley face">
         <h2>YOUR AVATAR</h2>
         <img src="https://image.ibb.co/efmFQf/AVATAR.png" class="img-circle" height="250" width="250" alt="Smiley face">
         <h2>UPLOAD A NEW AVATAR</h2>

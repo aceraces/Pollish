@@ -112,7 +112,7 @@
 <!-- Stats page view -->
 <div class="jumbotron">
     <div class="container text-center">
-        <img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="100" width="100" alt="Smiley face">
+        <img src="https://i.ibb.co/jr44XK0/pollish-100-100-trans.png" height="100" width="100" alt="Smiley face">
         <h2>GENDER GRAPH</h2>
         <canvas id="gender"></canvas>
         <br>
