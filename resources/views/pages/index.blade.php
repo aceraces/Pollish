@@ -84,7 +84,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="pull-left" href="/"><img src="https://image.ibb.co/kRo6gL/pollish-512-512-trans.png" height="50" width="50" alt="Smiley face"></a>
+                    <a class="pull-left" href="/"><img src="https://i.ibb.co/Vjz16gh/pollish-50-50-trans.png" height="50" width="50" alt="Smiley face"></a>
                 </div>
 			
 
